@@ -5,7 +5,7 @@ Web server para monitorar a temperatura, Utilizando o Módulo ESP8266 NodeMCU V3
 
 Aplicativo - Requisição do Web server
 ===============================================
-![](https://github.com/jacksonn455/Monitor-de-temperatura/blob/main/automaca.jpg)
+![](https://github.com/jacksonn455/automacao-cervejaria/blob/master/images/readme/temperature.png)
 
 Produção
 ===============================================
