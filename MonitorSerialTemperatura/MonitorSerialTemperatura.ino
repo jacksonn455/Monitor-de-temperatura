@@ -1,15 +1,13 @@
 #include <ESP8266WebServer.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
+#include <FirebaseArduino.h>
 
-// GPIO where the DS18B20 is connected to
 const int oneWireBus = 4;     
-
-// Setup a oneWire instance to communicate with any OneWire devices
 OneWire oneWire(oneWireBus);
-
-// Pass our oneWire reference to Dallas Temperature sensor 
 DallasTemperature sensors(&oneWire);
+#define FIREBASE_HOST "https://velha-guarda.web.app/"
+#define FIREBASE_AUTH "SB4ahzKIDOhbPgTtKp7PMQGH10r11"
 
 float tempSensor1;
 
@@ -44,6 +42,7 @@ void setup() {
   server.on("/", handle_OnConnect);
   server.onNotFound(handle_NotFound);
 
+  Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
   server.begin();
   Serial.println("HTTP server started");
 }
