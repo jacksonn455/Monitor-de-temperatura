@@ -6,7 +6,7 @@
 const int oneWireBus = 4;     
 OneWire oneWire(oneWireBus);
 DallasTemperature sensors(&oneWire);
-#define FIREBASE_HOST "https://velha-guarda.web.app/"
+#define FIREBASE_HOST "https://velha-guarda.firebaseio.com/"
 #define FIREBASE_AUTH "SB4ahzKIDOhbPgTtKp7PMQGH10r11"
 
 float tempSensor1;
