@@ -13,8 +13,8 @@ float tempSensor1;
 
 uint8_t sensor1[8] = { 0x28, 0xEE, 0xD5, 0x64, 0x1A, 0x16, 0x02, 0xEC  };
 /*Put your SSID & Password*/
-const char* ssid = "Net Virtua 67";  // Enter SSID here
-const char* password = "3511598700";  //Enter Password here
+const char* ssid = "Nome da rede Wifi";  // Enter SSID here
+const char* password = "Senha da rede WIFI";  //Enter Password here
 
 ESP8266WebServer server(80);  
 
