@@ -51,6 +51,8 @@ void loop() {
   server.handleClient();
   sensors.requestTemperatures(); 
   float temperatureC = sensors.getTempCByIndex(0);
+  Serial.print(Firebase.getString("situation") + "\n");
+  analogWrite(temperatureC, Firebase.getString("situation").toInt());
   Serial.print(temperatureC);
   Serial.println("ºC");
   delay(5000);
